@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+  import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, Loading, AlertController } from 'ionic-angular';
 import { SearchPage } from '../../pages/search/search';
 import { RegisterPage } from '../../pages/register/register';
