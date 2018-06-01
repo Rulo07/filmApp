@@ -41,7 +41,8 @@ export class SearchPage{
     console.log("llegamos");
     //debugger;
     this._listfilms.getByTitle(input).subscribe(
-    (result:any) => { this.listF = result; });
+    (result:any) => { this.listF = result;
+      console.log(this.listF)});
   }
 
   showFilm(film:Film){

@@ -50,10 +50,10 @@ export class ListfilmsProvider {
     return data;
   }
 
-  private parseSingleEntity(response: Response): Film[] {
-    let data = response.json();
-    return [<Film> data];
-  }
+  // private parseSingleEntity(response: Response): Film[] {
+  //   let data = response.json();
+  //   return [<Film> data];
+  // }
 
   private error(response: Response) {
     return Observable.of(null);

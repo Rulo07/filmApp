@@ -7,10 +7,10 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Search Page</ion-title>
+    <ion-title>Search your Film!</ion-title>
   </ion-navbar>
   <button ion-button (click)="logout()" style="float:right">
-        <ion-icon name="log-out"></ion-icon>
+        Log out
   </button>
 
 </ion-header>
@@ -29,12 +29,12 @@
 
   <ion-list>
     <ion-item *ngFor = "let films of listF.results">
-      <ion-thumbnail item-start>
+      <!-- <ion-thumbnail item-start>
         <img src={{films.backdrop_path}}>
-      </ion-thumbnail>
+      </ion-thumbnail> -->
       <h2>{{films.title}}</h2>
       <p>{{films.overview}}</p>
-      <button ion-button clear item-end (click)="showFilm()">View</button>
+      <button ion-button clear item-end (click)="showFilm(films)">View</button>
     </ion-item>
   </ion-list>
 

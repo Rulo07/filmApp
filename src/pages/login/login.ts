@@ -84,8 +84,8 @@ export class LoginPage {
   }
 
   private pushPage(){
-    //this.navCtrl.setRoot(SearchPage);
-    this.navCtrl.push(SearchPage);
+    //this.navCtrl.push(SearchPage);
+    this.navCtrl.setRoot(SearchPage);
   }
 
   public createAccount(){
